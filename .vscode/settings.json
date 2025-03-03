@@ -1,0 +1,13 @@
+{
+  "cSpell.words": [
+    "awsx",
+    "dotenv",
+    "fastapi",
+    "objectagg",
+    "pipenv",
+    "pipfile",
+    "pydantic",
+    "starlette",
+    "uvicorn"
+  ]
+}

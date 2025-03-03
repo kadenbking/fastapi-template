@@ -1,0 +1,21 @@
+name: ptg
+
+services:
+  api:
+    build:
+      context: ./src
+    container_name: 'api'
+    restart: always
+    environment:
+      - APP_ENV=${APP_ENV}
+      - APP_VERSION=${APP_VERSION}
+      - API_KEY=${API_KEY}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
+      - S3_BUCKET=${S3_BUCKET}
+    ports:
+      - "80:80"
+    command: uvicorn api.server:app --host 0.0.0.0 --reload --port 80

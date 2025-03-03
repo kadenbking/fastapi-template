@@ -1,0 +1,8 @@
+fastapi
+pydantic
+pydantic[email]
+pydantic_settings
+starlette
+uvicorn
+python-dotenv
+mysql-connector-python
